@@ -149,13 +149,11 @@ a{
   display: inline-block;
   justify-content: center;
   transition: transform 0.8s ease-in-out;
-
 }
 
 .card-white:hover {
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
   transform: scale(1.05);
-
 }
 
 #list-reviews {
@@ -185,6 +183,51 @@ a{
   padding: 50px;
   margin-top: 150px;
   text-align: center;
+}
+
+.newsletter-form {
+  background-color: black;
+  padding-left: 20px;
+  text-align: left;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+
+.newsletter-form form {
+  border: 2px solid white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.newsletter-form h3 {
+  color: white;
+  font-size: 20px;
+}
+
+.newsletter-form input[type="email"] {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  width: 90%;
+  margin: 10px;
+}
+
+.newsletter-form button {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.newsletter-form button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
 }
 
 .footer p {
