@@ -1,0 +1,284 @@
+/*body */  
+
+body {
+  background-color: #FAFAFA;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: 'Overpass';
+}
+
+/* textes*/
+
+h1, h2, h3 {
+  font-family: 'Chivo';
+}
+
+h1 {
+  color: black;
+  font-size: 70px;
+  margin-right: 20px;
+  margin-top: 170px;
+}
+
+h2 {
+  padding: 50px;
+  font-size: 28px;
+  text-align: center;
+}
+
+h3 {
+font-size: 22px;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*logo*/
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  height: 70px;
+  width: 70px;
+  margin-top: 50px;
+}
+
+
+/*encart 1*/
+
+#encart1 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+#encart1 h1 {
+  margin-left: 100px;
+  text-align: left;
+}
+
+
+.right img {
+  margin-top: 80px;
+  margin-right: 50px;
+  height: 400px;
+  width: 700px;
+  object-fit: cover;
+}
+
+.btn-orange {
+  background-color: #FD824E;
+  color: black;
+  padding: 20px 50px;
+  font-size: 20px;
+  font-weight: 700px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  margin-right: 300px;
+}
+
+.btn-orange:hover{
+  background-color: #E37648
+}
+
+
+/*encart2 */
+
+#encart2 {
+  background-color: #232323;
+  height: auto;
+  padding: 50px 150px;
+  color: white;
+  margin-top: 80px;
+}
+
+.card-black {
+  background-color: transparent;
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  border-radius: 5px;
+  border: 2px solid white;
+  color: white;
+  transition: transform 0.2s ease-in-out;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  height: 400px;
+  width: 300px;
+}
+
+.card-black img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-black:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.grid{
+  display: flex;
+  overflow-x: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  border-radius: 5px;
+}
+
+
+/*Avis*/
+
+#avis {
+  color: black;
+}
+
+.card-white {
+  color: black;
+  height: 300px;
+  width: 400px;
+  background-color: white;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  display: inline-block;
+  justify-content: center;
+  transition: transform 0.8s ease-in-out;
+
+}
+
+.card-white:hover {
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+
+}
+
+#list-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Ajout de cette propriété pour centrer les éléments */
+}
+
+.card-white p {
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: justify;
+  color: #3B3B3B;
+  font-style: italic;
+}
+
+.big-orange {
+  font-size: 110px;
+  color: #FD824E;
+  margin: -40px 0px -60px -20px;
+}
+
+/*footer*/
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  padding: 50px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 20px;
+  color: white;
+}
+
+.footer img {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  justify-content: center;
+  margin: 5px;
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 960px) {
+  .grid{
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+  #encart1 {
+  grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .grid{
+  grid-template-columns: 1fr 1fr;
+  }
+  #encart1 {
+  grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .grid{
+  grid-template-columns: 1fr;
+  }
+  #encart1 {
+  grid-template-columns: 1fr;
+  }
+  .right img {
+  height: 200px;
+  width: 500px;
+  object-fit: cover;
+  }
+}
+
+/* Barre de défilement verticale */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Barre de défilement horizontale */
+
+  ::-webkit-scrollbar-horizontal {
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb-piece {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb-piece:hover {
+  background-color: #555;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
